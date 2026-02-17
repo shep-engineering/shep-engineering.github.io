@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Sheppard - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DS</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">David Sheppard</span>
+                </h1>
+                <p class="hero-subtitle">Engineering Leader | Cybersecurity Platforms | Cloud-Native Systems</p>
+                <p class="hero-description">
+                    Engineering and product leader with 20+ years building and operating cloud-native distributed systems,
+                    developer platforms, and cybersecurity products. I’ve led organizations of 50+ engineers through large-scale
+                    transformations—improving delivery cadence, reliability, and cost efficiency—while keeping security and
+                    customer trust at the center.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/shep-engineering" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/david-sheppard-42225b94/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I’m an engineering leader with deep experience across cybersecurity platforms, identity and access management
+                        (IAM), and cloud-native distributed systems. My career spans Fortune 100 scale and startup environments, and I
+                        specialize in connecting strategy to execution across product, engineering, and security stakeholders.
+                    </p>
+                    <p>
+                        I take a pragmatic, data-driven approach to modernization—balancing speed, quality, and risk. I’m passionate
+                        about building strong leadership pipelines and developing talent, and I’ve helped multiple engineers grow into
+                        senior and lead roles.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Engineers Led</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">9000+</span>
+                            <span class="stat-label">Customers Served</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-code highlight-icon"></i>
+                        <h3>Secure Platforms</h3>
+                        <p>Security-first architecture for IAM, credential handling, and PII governance</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-mobile-alt highlight-icon"></i>
+                        <h3>Delivery Excellence</h3>
+                        <p>Agile + DevOps transformation—from 6–8 week cycles to weekly deployments</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-rocket highlight-icon"></i>
+                        <h3>Reliability &amp; Scale</h3>
+                        <p>Observability, runbooks, and incident response to improve MTTR and uptime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Enterprise Cybersecurity Platform</h3>
+                        <p class="project-description">
+                            Led engineering delivery for an enterprise cybersecurity platform serving 9,000+ customers.
+                            Established secure delivery guardrails, live-site reliability practices, and measurable outcomes
+                            using DORA metrics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">CI/CD</span>
+                            <span class="tech-tag">Observability</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shep-engineering" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Platforms &amp; Governance</h3>
+                        <p class="project-description">
+                            Built API-driven data platforms processing billions of records daily.
+                            Delivered $20M+ annual cost savings via architecture optimization and protected $500M+ in revenue
+                            through secure data separation during corporate divestiture.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Distributed Systems</span>
+                            <span class="tech-tag">API-First</span>
+                            <span class="tech-tag">Cloud</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shep-engineering" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI/ML Security Signals</h3>
+                        <p class="project-description">
+                            Delivered AI/ML-powered classification and anomaly detection capabilities to identify suspicious
+                            access patterns and security risks. Focused on secure SDLC, audit readiness, and operational resilience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Governance</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shep-engineering" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Cloud &amp; Platforms</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-aws skill-icon"></i>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft skill-icon"></i>
+                            <span class="skill-name">Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker skill-icon"></i>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired skill-icon"></i>
+                            <span class="skill-name">Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram skill-icon"></i>
+                            <span class="skill-name">Microservices</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-exchange-alt skill-icon"></i>
+                            <span class="skill-name">API Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>DevOps &amp; Delivery</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-github skill-icon"></i>
+                            <span class="skill-name">GitHub Actions</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch skill-icon"></i>
+                            <span class="skill-name">GitOps</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vial skill-icon"></i>
+                            <span class="skill-name">Release Guardrails</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar skill-icon"></i>
+                            <span class="skill-name">DORA Metrics</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bell skill-icon"></i>
+                            <span class="skill-name">Monitoring &amp; Alerting</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-book skill-icon"></i>
+                            <span class="skill-name">Runbooks &amp; IR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Security, Data &amp; Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-key skill-icon"></i>
+                            <span class="skill-name">IAM</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-user-shield skill-icon"></i>
+                            <span class="skill-name">Credential Handling</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">Distributed Data</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain skill-icon"></i>
+                            <span class="skill-name">AI/ML Signals</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python skill-icon"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities.
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>davidasheppard@outlook.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>Available on request</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>United States</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/shep-engineering" class="social-link-large" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/david-sheppard-42225b94/" class="social-link-large" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 David Sheppard. All rights reserved.</p>
+                <p>Designed and built with <i class="fas fa-heart"></i> by David Sheppard</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
