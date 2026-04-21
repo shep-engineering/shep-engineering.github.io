@@ -28,9 +28,9 @@
     --hero-accent-strong: rgba(255, 255, 255, 0.2);
     --card-bg: #ffffff;
     --input-bg: #ffffff;
-    --theme-toggle-bg: rgba(255, 255, 255, 0.14);
-    --theme-toggle-text: #ffffff;
-    --theme-toggle-border: rgba(255, 255, 255, 0.24);
+    --theme-toggle-bg: rgba(255, 255, 255, 0.92);
+    --theme-toggle-text: #2d3748;
+    --theme-toggle-border: #d7dfeb;
 }
 
 html[data-theme="dark"] {
@@ -170,7 +170,7 @@ body {
 
 .theme-toggle:hover {
     transform: translateY(-2px);
-    background: var(--hero-accent);
+    background: var(--bg-light);
 }
 
 .theme-toggle-label {
