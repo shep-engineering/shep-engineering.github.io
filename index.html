@@ -149,10 +149,11 @@
                     <div class="project-content">
                         <h3 class="project-title">Open Brain</h3>
                         <p class="project-description">
-                            Persistent AI second brain: an MCP server backed by PostgreSQL + pgvector that gives
-                            every AI tool shared memory. Store thoughts as vector embeddings so Claude, Cursor,
-                            Windsurf, and Copilot can search by meaning, not just keywords. Local-first; you own
-                            the data.
+                            Persistent AI second brain: a 19-tool MCP server backed by PostgreSQL + pgvector
+                            that gives every AI tool one shared memory. Thoughts are stored as vector
+                            embeddings, so Claude, Cursor, Windsurf, and Copilot search by meaning rather than
+                            keywords, and each one can read what the others learned. Stdio and streamable HTTP
+                            transports. Local-first; you own the data, and it runs for cents a month.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
@@ -181,13 +182,19 @@
                     <div class="project-content">
                         <h3 class="project-title">Waygate AI</h3>
                         <p class="project-description">
-                            A guarded gateway between your application and AI providers. Python LLM client
-                            library that unifies Anthropic, OpenAI, and local Ollama behind one interface,
-                            centralizing backend selection, retry handling, token/cost telemetry, and
-                            prompt-injection defenses so caller code never imports provider SDKs directly.
+                            A guarded, cost-aware gateway between your application and AI providers. Callers
+                            declare a tier, not a model, and the router resolves the cheapest capable model
+                            across Anthropic, OpenAI, and local Ollama. Routing is priced from a registry, so
+                            what a tier selects and what it bills at cannot drift apart. Cache-aware sessions
+                            pin the model for a conversation: a provider's cached prompt prefix is keyed to the
+                            model, so switching mid-conversation throws the cache away and re-bills it at full
+                            price. That is the trap that makes naive routing lose money. Retry and failover,
+                            token and cost telemetry, and prompt-injection defenses throughout.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Python 3.11</span>
+                            <span class="tech-tag">Model Routing</span>
+                            <span class="tech-tag">Cost Telemetry</span>
                             <span class="tech-tag">Anthropic</span>
                             <span class="tech-tag">OpenAI</span>
                             <span class="tech-tag">Ollama</span>
@@ -211,11 +218,16 @@
                         <h3 class="project-title">Agentic Lab</h3>
                         <p class="project-description">
                             A two-agent LangGraph workflow with 3-tier model routing and Open Brain integration.
-                            A Researcher agent searches memory via semantic search, a Router scores complexity
-                            and picks the cheapest capable model, and an Analyst synthesizes the answer.
+                            A Researcher searches memory with pgvector semantic search, a Router scores task
+                            complexity across four dimensions using free heuristics with no model call at all,
+                            then routes to the cheapest capable tier: a local model for free, Haiku for a tenth
+                            of a cent, Sonnet only when the work genuinely earns it. An Analyst synthesizes the
+                            answer. If a cloud call fails, it falls back to the local model and the workflow
+                            keeps running.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">Complexity Routing</span>
                             <span class="tech-tag">Claude API</span>
                             <span class="tech-tag">Ollama</span>
                             <span class="tech-tag">Python</span>
